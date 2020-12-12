@@ -1,0 +1,702 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CFD3A3142584D92F004598B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD3A3132584D92F004598B0 /* AppDelegate.swift */; };
+		CFD3A3162584D92F004598B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD3A3152584D92F004598B0 /* SceneDelegate.swift */; };
+		CFD3A31B2584D92F004598B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFD3A3192584D92F004598B0 /* Main.storyboard */; };
+		CFD3A31D2584D930004598B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFD3A31C2584D930004598B0 /* Assets.xcassets */; };
+		CFD3A3202584D930004598B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFD3A31E2584D930004598B0 /* LaunchScreen.storyboard */; };
+		CFD3A3362584D930004598B0 /* NobelLaureatesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD3A3352584D930004598B0 /* NobelLaureatesUITests.swift */; };
+		CFD3A34B2584DC1F004598B0 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD3A34A2584DC1F004598B0 /* Dynamic.swift */; };
+		CFD3A3532584DC98004598B0 /* LaureatesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD3A3522584DC98004598B0 /* LaureatesModel.swift */; };
+		CFD3A35B2584EA24004598B0 /* nobel-prize-laureates.json in Resources */ = {isa = PBXBuildFile; fileRef = CFD3A35A2584EA24004598B0 /* nobel-prize-laureates.json */; };
+		CFD3A3672584EA75004598B0 /* LaureatesParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD3A3662584EA75004598B0 /* LaureatesParser.swift */; };
+		CFD3A37A2584F947004598B0 /* LaureatesParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD3A3792584F947004598B0 /* LaureatesParserTests.swift */; };
+		CFD3A3832584FA28004598B0 /* LaureatesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD3A3822584FA28004598B0 /* LaureatesListViewModel.swift */; };
+		CFD3A38C2584FBB5004598B0 /* LaureatesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD3A38B2584FBB5004598B0 /* LaureatesListViewController.swift */; };
+		CFD3A3922584FD32004598B0 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD3A3912584FD32004598B0 /* TableViewDataSource.swift */; };
+		CFD3A3B125850C1E004598B0 /* SearchLaureatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD3A3B025850C1E004598B0 /* SearchLaureatesViewController.swift */; };
+		CFD3A3B7258513D3004598B0 /* LaureatesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD3A3B6258513D3004598B0 /* LaureatesTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CFD3A3272584D930004598B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFD3A3082584D92F004598B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFD3A30F2584D92F004598B0;
+			remoteInfo = NobelLaureates;
+		};
+		CFD3A3322584D930004598B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFD3A3082584D92F004598B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFD3A30F2584D92F004598B0;
+			remoteInfo = NobelLaureates;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CFD3A3102584D92F004598B0 /* NobelLaureates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NobelLaureates.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFD3A3132584D92F004598B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CFD3A3152584D92F004598B0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CFD3A31A2584D92F004598B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CFD3A31C2584D930004598B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CFD3A31F2584D930004598B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CFD3A3212584D930004598B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFD3A3262584D930004598B0 /* NobelLaureatesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NobelLaureatesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFD3A32C2584D930004598B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFD3A3312584D930004598B0 /* NobelLaureatesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NobelLaureatesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFD3A3352584D930004598B0 /* NobelLaureatesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NobelLaureatesUITests.swift; sourceTree = "<group>"; };
+		CFD3A3372584D930004598B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFD3A34A2584DC1F004598B0 /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
+		CFD3A3522584DC98004598B0 /* LaureatesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaureatesModel.swift; sourceTree = "<group>"; };
+		CFD3A35A2584EA24004598B0 /* nobel-prize-laureates.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "nobel-prize-laureates.json"; sourceTree = "<group>"; };
+		CFD3A3662584EA75004598B0 /* LaureatesParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaureatesParser.swift; sourceTree = "<group>"; };
+		CFD3A3792584F947004598B0 /* LaureatesParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaureatesParserTests.swift; sourceTree = "<group>"; };
+		CFD3A3822584FA28004598B0 /* LaureatesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaureatesListViewModel.swift; sourceTree = "<group>"; };
+		CFD3A38B2584FBB5004598B0 /* LaureatesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaureatesListViewController.swift; sourceTree = "<group>"; };
+		CFD3A3912584FD32004598B0 /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
+		CFD3A3B025850C1E004598B0 /* SearchLaureatesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLaureatesViewController.swift; sourceTree = "<group>"; };
+		CFD3A3B6258513D3004598B0 /* LaureatesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaureatesTableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CFD3A30D2584D92F004598B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFD3A3232584D930004598B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFD3A32E2584D930004598B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CFD3A3072584D92F004598B0 = {
+			isa = PBXGroup;
+			children = (
+				CFD3A3122584D92F004598B0 /* NobelLaureates */,
+				CFD3A3292584D930004598B0 /* NobelLaureatesTests */,
+				CFD3A3342584D930004598B0 /* NobelLaureatesUITests */,
+				CFD3A3112584D92F004598B0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CFD3A3112584D92F004598B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CFD3A3102584D92F004598B0 /* NobelLaureates.app */,
+				CFD3A3262584D930004598B0 /* NobelLaureatesTests.xctest */,
+				CFD3A3312584D930004598B0 /* NobelLaureatesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CFD3A3122584D92F004598B0 /* NobelLaureates */ = {
+			isa = PBXGroup;
+			children = (
+				CFD3A3902584FD19004598B0 /* Data Sources */,
+				CFD3A3992584FDE2004598B0 /* Views */,
+				CFD3A38A2584FB9C004598B0 /* Controllers */,
+				CFD3A3812584F9FF004598B0 /* ViewModels */,
+				CFD3A3652584EA54004598B0 /* Service */,
+				CFD3A3592584EA0E004598B0 /* Resources */,
+				CFD3A3492584DC07004598B0 /* Common */,
+				CFD3A3482584DBFE004598B0 /* Models */,
+				CFD3A3132584D92F004598B0 /* AppDelegate.swift */,
+				CFD3A3152584D92F004598B0 /* SceneDelegate.swift */,
+				CFD3A3192584D92F004598B0 /* Main.storyboard */,
+				CFD3A31E2584D930004598B0 /* LaunchScreen.storyboard */,
+				CFD3A3212584D930004598B0 /* Info.plist */,
+			);
+			path = NobelLaureates;
+			sourceTree = "<group>";
+		};
+		CFD3A3292584D930004598B0 /* NobelLaureatesTests */ = {
+			isa = PBXGroup;
+			children = (
+				CFD3A32C2584D930004598B0 /* Info.plist */,
+				CFD3A3792584F947004598B0 /* LaureatesParserTests.swift */,
+			);
+			path = NobelLaureatesTests;
+			sourceTree = "<group>";
+		};
+		CFD3A3342584D930004598B0 /* NobelLaureatesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CFD3A3352584D930004598B0 /* NobelLaureatesUITests.swift */,
+				CFD3A3372584D930004598B0 /* Info.plist */,
+			);
+			path = NobelLaureatesUITests;
+			sourceTree = "<group>";
+		};
+		CFD3A3482584DBFE004598B0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CFD3A3522584DC98004598B0 /* LaureatesModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CFD3A3492584DC07004598B0 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CFD3A34A2584DC1F004598B0 /* Dynamic.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		CFD3A3592584EA0E004598B0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CFD3A31C2584D930004598B0 /* Assets.xcassets */,
+				CFD3A35A2584EA24004598B0 /* nobel-prize-laureates.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CFD3A3652584EA54004598B0 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				CFD3A3662584EA75004598B0 /* LaureatesParser.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		CFD3A3812584F9FF004598B0 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CFD3A3822584FA28004598B0 /* LaureatesListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CFD3A38A2584FB9C004598B0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CFD3A38B2584FBB5004598B0 /* LaureatesListViewController.swift */,
+				CFD3A3B025850C1E004598B0 /* SearchLaureatesViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CFD3A3902584FD19004598B0 /* Data Sources */ = {
+			isa = PBXGroup;
+			children = (
+				CFD3A3912584FD32004598B0 /* TableViewDataSource.swift */,
+			);
+			path = "Data Sources";
+			sourceTree = "<group>";
+		};
+		CFD3A3992584FDE2004598B0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CFD3A39A2584FDEE004598B0 /* LaureatesListCell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CFD3A39A2584FDEE004598B0 /* LaureatesListCell */ = {
+			isa = PBXGroup;
+			children = (
+				CFD3A3B6258513D3004598B0 /* LaureatesTableViewCell.swift */,
+			);
+			path = LaureatesListCell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CFD3A30F2584D92F004598B0 /* NobelLaureates */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFD3A33A2584D930004598B0 /* Build configuration list for PBXNativeTarget "NobelLaureates" */;
+			buildPhases = (
+				CFD3A30C2584D92F004598B0 /* Sources */,
+				CFD3A30D2584D92F004598B0 /* Frameworks */,
+				CFD3A30E2584D92F004598B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NobelLaureates;
+			productName = NobelLaureates;
+			productReference = CFD3A3102584D92F004598B0 /* NobelLaureates.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CFD3A3252584D930004598B0 /* NobelLaureatesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFD3A33D2584D930004598B0 /* Build configuration list for PBXNativeTarget "NobelLaureatesTests" */;
+			buildPhases = (
+				CFD3A3222584D930004598B0 /* Sources */,
+				CFD3A3232584D930004598B0 /* Frameworks */,
+				CFD3A3242584D930004598B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFD3A3282584D930004598B0 /* PBXTargetDependency */,
+			);
+			name = NobelLaureatesTests;
+			productName = NobelLaureatesTests;
+			productReference = CFD3A3262584D930004598B0 /* NobelLaureatesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CFD3A3302584D930004598B0 /* NobelLaureatesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFD3A3402584D930004598B0 /* Build configuration list for PBXNativeTarget "NobelLaureatesUITests" */;
+			buildPhases = (
+				CFD3A32D2584D930004598B0 /* Sources */,
+				CFD3A32E2584D930004598B0 /* Frameworks */,
+				CFD3A32F2584D930004598B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFD3A3332584D930004598B0 /* PBXTargetDependency */,
+			);
+			name = NobelLaureatesUITests;
+			productName = NobelLaureatesUITests;
+			productReference = CFD3A3312584D930004598B0 /* NobelLaureatesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CFD3A3082584D92F004598B0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					CFD3A30F2584D92F004598B0 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					CFD3A3252584D930004598B0 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = CFD3A30F2584D92F004598B0;
+					};
+					CFD3A3302584D930004598B0 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = CFD3A30F2584D92F004598B0;
+					};
+				};
+			};
+			buildConfigurationList = CFD3A30B2584D92F004598B0 /* Build configuration list for PBXProject "NobelLaureates" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CFD3A3072584D92F004598B0;
+			productRefGroup = CFD3A3112584D92F004598B0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CFD3A30F2584D92F004598B0 /* NobelLaureates */,
+				CFD3A3252584D930004598B0 /* NobelLaureatesTests */,
+				CFD3A3302584D930004598B0 /* NobelLaureatesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CFD3A30E2584D92F004598B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFD3A35B2584EA24004598B0 /* nobel-prize-laureates.json in Resources */,
+				CFD3A3202584D930004598B0 /* LaunchScreen.storyboard in Resources */,
+				CFD3A31D2584D930004598B0 /* Assets.xcassets in Resources */,
+				CFD3A31B2584D92F004598B0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFD3A3242584D930004598B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFD3A32F2584D930004598B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CFD3A30C2584D92F004598B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFD3A3B7258513D3004598B0 /* LaureatesTableViewCell.swift in Sources */,
+				CFD3A3B125850C1E004598B0 /* SearchLaureatesViewController.swift in Sources */,
+				CFD3A3532584DC98004598B0 /* LaureatesModel.swift in Sources */,
+				CFD3A34B2584DC1F004598B0 /* Dynamic.swift in Sources */,
+				CFD3A3922584FD32004598B0 /* TableViewDataSource.swift in Sources */,
+				CFD3A3142584D92F004598B0 /* AppDelegate.swift in Sources */,
+				CFD3A3672584EA75004598B0 /* LaureatesParser.swift in Sources */,
+				CFD3A3162584D92F004598B0 /* SceneDelegate.swift in Sources */,
+				CFD3A3832584FA28004598B0 /* LaureatesListViewModel.swift in Sources */,
+				CFD3A38C2584FBB5004598B0 /* LaureatesListViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFD3A3222584D930004598B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFD3A37A2584F947004598B0 /* LaureatesParserTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFD3A32D2584D930004598B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFD3A3362584D930004598B0 /* NobelLaureatesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CFD3A3282584D930004598B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFD3A30F2584D92F004598B0 /* NobelLaureates */;
+			targetProxy = CFD3A3272584D930004598B0 /* PBXContainerItemProxy */;
+		};
+		CFD3A3332584D930004598B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFD3A30F2584D92F004598B0 /* NobelLaureates */;
+			targetProxy = CFD3A3322584D930004598B0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CFD3A3192584D92F004598B0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFD3A31A2584D92F004598B0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CFD3A31E2584D930004598B0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFD3A31F2584D930004598B0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CFD3A3382584D930004598B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CFD3A3392584D930004598B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CFD3A33B2584D930004598B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9YKP9U85Z3;
+				INFOPLIST_FILE = NobelLaureates/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nobellureates.NobelLaureates;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CFD3A33C2584D930004598B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9YKP9U85Z3;
+				INFOPLIST_FILE = NobelLaureates/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nobellureates.NobelLaureates;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CFD3A33E2584D930004598B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9YKP9U85Z3;
+				INFOPLIST_FILE = NobelLaureatesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nobellureates.NobelLaureatesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NobelLaureates.app/NobelLaureates";
+			};
+			name = Debug;
+		};
+		CFD3A33F2584D930004598B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9YKP9U85Z3;
+				INFOPLIST_FILE = NobelLaureatesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nobellureates.NobelLaureatesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NobelLaureates.app/NobelLaureates";
+			};
+			name = Release;
+		};
+		CFD3A3412584D930004598B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9YKP9U85Z3;
+				INFOPLIST_FILE = NobelLaureatesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nobellureates.NobelLaureatesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NobelLaureates;
+			};
+			name = Debug;
+		};
+		CFD3A3422584D930004598B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9YKP9U85Z3;
+				INFOPLIST_FILE = NobelLaureatesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nobellureates.NobelLaureatesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NobelLaureates;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CFD3A30B2584D92F004598B0 /* Build configuration list for PBXProject "NobelLaureates" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFD3A3382584D930004598B0 /* Debug */,
+				CFD3A3392584D930004598B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFD3A33A2584D930004598B0 /* Build configuration list for PBXNativeTarget "NobelLaureates" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFD3A33B2584D930004598B0 /* Debug */,
+				CFD3A33C2584D930004598B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFD3A33D2584D930004598B0 /* Build configuration list for PBXNativeTarget "NobelLaureatesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFD3A33E2584D930004598B0 /* Debug */,
+				CFD3A33F2584D930004598B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFD3A3402584D930004598B0 /* Build configuration list for PBXNativeTarget "NobelLaureatesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFD3A3412584D930004598B0 /* Debug */,
+				CFD3A3422584D930004598B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CFD3A3082584D92F004598B0 /* Project object */;
+}
